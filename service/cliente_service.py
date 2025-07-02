@@ -13,7 +13,7 @@ def cadastra_cliente(nome, telefone, servico):
 def ver_clientes():
     return cliente_repository.listar_clientes()
 
-def remover_cliente(id):
+def removendo_cliente(id):
     cliente_repository.deletar_cliente(id)
     
 

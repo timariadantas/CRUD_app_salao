@@ -29,7 +29,7 @@ def listar_clientes():
         
     return clientes
 
-def deletar_cliente():
+def deletar_cliente(id):
     conexao = conexao_bd()
     cursor = conexao.cursor()
     cursor.execute('DELETE FROM clientes WHERE id = ?', (id,))
